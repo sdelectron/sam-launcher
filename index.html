@@ -8,20 +8,14 @@
 </head>
 <body>
   <header>
-    <div>
-      <h1>Sam Launcher</h1>
-      <p class="sub">Glossy home screen &middot; TizenBrew apps &middot; HDMI 1-3 &middot; Soundbar on ARC stays on Receiver</p>
-    </div>
-    <div id="clock" aria-live="off">--:--</div>
+    <div class="brand"><span class="brand-mark"></span><span>Sam</span></div>
+    <div id="clock">--:--</div>
   </header>
-
   <main>
+    <div id="grid" role="grid" aria-label="Home screen"></div>
+    <p class="help">Arrows to move &middot; OK to open &middot; Back to TizenBrew &middot; Soundbar stays on Receiver (HDMI ARC)</p>
     <p id="notice" class="notice hidden"></p>
-    <div id="grid" role="grid" aria-label="Home screen tiles"></div>
-    <p class="help">Use the remote arrows to move, OK to open, Back to stay here. Plex, Netflix, Disney+, Hulu, Spotify and YouTube tiles open the installed app by name if it is on the TV, otherwise they tell you to install it from Smart Hub first. No Moonfin or Jellyfin tiles in this first test. Samsung Home is kept as the escape hatch back to Samsung's menus, settings and all Sources. Audio is not changed by this launcher — leave TV audio output on Receiver (HDMI ARC) for the soundbar.</p>
-    <p id="preview-note" class="help hidden">Preview mode: Tizen APIs are not available in a desktop browser, so app launching and HDMI switching are simulated here. On the TV they use the real Tizen APIs.</p>
   </main>
-
   <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
     <div class="overlay-box">
       <h2 id="overlay-title">Note</h2>
@@ -29,7 +23,6 @@
       <button id="overlay-close" type="button">OK</button>
     </div>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
