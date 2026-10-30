@@ -1,0 +1,10 @@
+{
+  "name": "sam-launcher",
+  "version": "1.0.0",
+  "appName": "Sam Launcher",
+  "packageType": "app",
+  "appPath": "index.html",
+  "main": "index.html",
+  "websiteURL": "index.html",
+  "description": "Glossy custom launcher for Samsung Tizen TV via TizenBrew: Plex, Netflix, TizenTube/FreeTube, YouTube, Disney+, Hulu, Spotify, HDMI 1-3, Samsung Home recovery. Soundbar audio stays on Receiver (HDMI ARC)."
+}
